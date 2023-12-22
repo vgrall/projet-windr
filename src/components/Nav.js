@@ -45,14 +45,17 @@ function Nav() {
               Nouveautés
             </a>
           </li>
-          <li className="navbar_item">
-            <a className="navbar_link" href="/">
-              Connexion
-            </a>
-          </li>
         </ul>
         <button className="navbar_burger" onClick={handleShowLinks}>
           <span className="burger-bar"></span>
+        </button>
+
+        <button
+          id="connexion"
+          href="/"
+          className={`navbar_logo ${showLinks ? "hide-button" : ""}`}
+        >
+          Connexion
         </button>
       </nav>
     </div>
